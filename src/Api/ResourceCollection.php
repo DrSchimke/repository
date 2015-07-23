@@ -31,6 +31,8 @@ interface ResourceCollection extends Traversable, ArrayAccess, Countable
      * Adds a resource to the collection.
      *
      * @param Resource $resource The added resource.
+     *
+     * @return void
      */
     public function add(Resource $resource);
 
@@ -39,6 +41,8 @@ interface ResourceCollection extends Traversable, ArrayAccess, Countable
      *
      * @param int      $key      The collection key.
      * @param Resource $resource The resource to set.
+     *
+     * @return void
      */
     public function set($key, Resource $resource);
 
@@ -57,6 +61,8 @@ interface ResourceCollection extends Traversable, ArrayAccess, Countable
      * Removes a collection key from the collection.
      *
      * @param int $key The collection key.
+     *
+     * @return void
      */
     public function remove($key);
 
@@ -71,6 +77,8 @@ interface ResourceCollection extends Traversable, ArrayAccess, Countable
 
     /**
      * Removes all resources from the collection.
+     *
+     * @return void
      */
     public function clear();
 
@@ -87,6 +95,8 @@ interface ResourceCollection extends Traversable, ArrayAccess, Countable
      * @param Resource[] $resources The resources to write into the
      *                              collection.
      *
+     * @return void
+     *
      * @throws InvalidArgumentException     If the resources are not an array and
      *                                      not a traversable object.
      * @throws UnsupportedResourceException If a resource does not implement
@@ -99,6 +109,8 @@ interface ResourceCollection extends Traversable, ArrayAccess, Countable
      *
      * @param Resource[] $resources The resources to merge into the
      *                              collection.
+     *
+     * @return void
      *
      * @throws InvalidArgumentException     If the resources are not an array
      *                                      and not a traversable object.

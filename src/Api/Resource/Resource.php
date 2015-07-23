@@ -162,6 +162,8 @@ interface Resource extends Serializable
      * @param string|null        $path The path of the resource in the
      *                                 repository. If not passed, the resource
      *                                 will be attached to it current path.
+     *
+     * @return void
      */
     public function attachTo(ResourceRepository $repo, $path = null);
 
@@ -173,6 +175,8 @@ interface Resource extends Serializable
      *
      * Neither the path nor the repository path of the resource should be
      * modified when detaching.
+     *
+     * @return void
      */
     public function detach();
 

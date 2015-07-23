@@ -32,6 +32,8 @@ interface EditableRepository extends ResourceRepository
      * @param Resource|ResourceCollection $resource The resource(s) to add at
      *                                              that path.
      *
+     * @return void
+     *
      * @throws InvalidArgumentException     If the path is invalid. The path
      *                                      must be  a non-empty string starting
      *                                      with "/".
